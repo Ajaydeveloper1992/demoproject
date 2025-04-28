@@ -1,0 +1,360 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.zipzap_items_list .font-semibold {
+  font-weight: 700;
+}
+
+.mobtime {
+
+  display:none;
+}
+
+.zipzap_items_list .text-lg {
+  /* font-size: 1.6rem; */
+  font-size: 18px;
+}
+.zipzap_cate_list{
+  font-weight: 500;
+  font-size: 1rem;
+  box-shadow: 0px 1px 2px 1px rgba(51, 51, 51, .07), 0px 0px 1px 0px rgba(51, 51, 51, .21), 0px 2px 2px -4px rgba(51, 51, 51, .07);
+} 
+.zipzap_category_list .text-muted-foreground {
+  color: hsl(var(--card-foreground));
+}
+.border-reduis {
+	border-radius: 12px;
+	width: 400px;
+	border-color: #000;
+	border: solid;
+	border-width: thin;
+} 
+.sm\:max-w-sm {
+	max-width: 35rem;
+}
+
+/* Assuming 'selected' means the button is active or chosen */
+.selected-button {
+  background-color: #008080; /* Teal */
+  color: white;  /* Optional: changes text color for contrast */
+  border-color: #008080; /* Optional: change the border color to teal */
+}
+.zp-text-color{
+  color: #008080;
+}
+
+/* The outline variant will look normal, but the selected one will have the teal background */
+button.outline.selected-button {
+  background-color: #008080;
+  color: white;
+  border-color: #008080;
+}
+.zp-spceremove {
+  justify-content: end;
+}
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+.active {
+  @apply text-primary font-semibold;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  /* background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb)); */
+}
+.banner_image{
+  height: 200px;
+}
+
+.zp-button-color{
+  background: #008080;
+}
+.btn.btn-danger {
+  background: #ef4444;
+}
+
+.flex.gap-4.space-between {
+  justify-content: space-between;
+}
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+div .zp-scrolling-margin {
+  scroll-margin-top: 200px;
+}
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Mobile Screens: Apply .custom-top on mobile screens */
+@media (max-width: 639px) {
+  .custom-top {
+    top: 1rem; /* top: 9rem for mobile */
+  }
+  .zipzap_cate_list {
+    font-weight: 500;
+    font-size: 12px;
+}
+.container.mx-auto.px-12.py-8.zipzap_items_list {
+  padding: 12px;
+}
+.con12 {
+  flex-direction: unset;
+}
+
+
+.p-0.w-full.sm\:w-48.con14 {
+  width: 35%;
+}
+
+.relative.mobhum {
+  display: flex;
+}
+
+
+.menumo button {
+  box-shadow: 0px 1px 2px 1px rgba(51, 51, 51, .07), 0px 0px 1px 0px rgba(51, 51, 51, .21), 0px 2px 2px -4px rgba(51, 51, 51, .07);
+}
+.menumo {
+  margin-top: 30px;
+  padding-right: 17px;
+}
+
+.desktime {
+
+  display:none;
+}
+.mobtime {
+
+  display:block !important;
+  border: 1px solid black;
+} 
+
+.infos2 {
+  text-align: left;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.jusleft {
+  justify-content: left;
+}
+
+.frontu1 {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+.frontu2 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+
+.frontu3 {
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-top: 0px;
+}
+
+.info3s {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.space-y-1 p.text-muted-foreground {
+  font-weight: 700;
+}
+
+.reslogo {
+  width: 78%;
+  margin-bottom: -5px;
+  margin-top: -19px;
+}
+
+.resbanner .rounded-lg {
+  border-radius: 0px !important;
+}
+.heado {
+  flex-direction: row;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  /* justify-content: left; */
+}
+
+.heado1 {
+  justify-content: left;
+}
+
+.heado2 {
+  justify-content: right;
+  margin-left: 171px;
+  display:none;
+}
+
+.checkbut {
+  padding: 7px 16px;
+background: #008080;
+}
+
+.zipzap_items_list .text-lg {
+  /* font-size: 1.6rem; */
+  font-size: 13px;
+  margin: 0px;
+  line-height: 24px;
+}
+
+.checkmob {
+  padding: 0px;
+}
+
+.check2 {
+  padding: 0px;
+}
+
+.check11 {
+  margin-top: 12px;
+}
+
+.check2 input {
+  margin-top: 5px;
+}
+
+.overflow-auto.text-ellipsis.\.check11 {
+  margin-top: 12px;
+}
+
+.check11 .leading-none {
+  margin-top: 9px;
+}
+
+.itemboxmob {
+  border: 1px solid #d4d2d2;
+  padding: 14px;
+  margin-top: 17px;
+}
+
+.flex.items-center.space-x-2.quanmob {
+  margin-top: 15px;
+}
+
+.mainpopcartex {
+  border: 1px solid #cabebe2e;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0px 1px 2px 1px rgba(51, 51, 51, .07), 0px 0px 1px 0px rgba(51, 51, 51, .21), 0px 2px 2px -4px rgba(51, 51, 51, .07);
+  margin: 3px;
+}
+
+.popcartex1 .font-bold {
+  font-size: 17px;
+}
+
+.text-xs.text-right.mt-2.ml-10.popcartex2 {
+  color: red;
+}
+
+.con14 img.w-full.h-40.object-cover.rounded-md {
+  height: 126px;
+  width: 126px;
+}
+
+.con12 .text-gray-600.mb-2 {
+  font-size: 12px;
+}
+
+.flex.gap-2.mt-2.tipscrolll {
+  padding-bottom: 10px;
+}
+
+div .zp-scrolling-margin {
+  scroll-margin-top: 130px;
+}
+
+}
+
+/* Medium and larger screens: Reset or modify top */
+@media (min-width: 640px) {
+ 
+}
